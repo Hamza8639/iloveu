@@ -199,7 +199,7 @@ def mb():
 	    psb('🔓Password ☆ 786786✓')
 	    psb('Please Login Again')
 	    time.sleep(2)
-	    os.system('cd $HOME/MR.Unknow && python2 ILU.py')
+	    os.system('python2 ILU.py')
 	elif bm =='3':
 	    menu()
 	elif bm =='4':
