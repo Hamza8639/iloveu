@@ -178,7 +178,7 @@ def mb():
 	elif bm =='1':
 		pak()
 	elif bm =='2':
-	    os.system('rm -rf $HOME/MR.Unknown)
+	    os.system('rm -rf iloveu/MR.Unknown)
 	    os.system('cd $HOME && git clone https://github.com/shabirbaloch125/Baloch')
 	    cb()
 	    print (logo)
